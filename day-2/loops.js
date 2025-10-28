@@ -12,7 +12,10 @@
  */
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
+for (let i = 0; i < array.length; i++){
+console.log(array[i]);
 
+}
   // YOUR CODE ABOVE HERE //
 }
 
@@ -22,7 +25,9 @@ function printArrayValues(array) {
  */
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
-
+for (let j = array.length - 1; j >= 0; j--){
+  console.log(array[j]);
+}
   // YOUR CODE ABOVE HERE //
 }
 
@@ -31,7 +36,15 @@ function printArrayValuesInReverse(array) {
  */
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
+  const keyArray = [];
+  for (const key in object){
+   
+     keyArray.push(key);
+    
+  }
 
+  return keyArray;
+  
   // YOUR CODE ABOVE HERE //
 }
 
@@ -41,7 +54,9 @@ function getObjectKeys(object) {
  */
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-
+  for (var key in object){
+    console.log(key);
+  }
   // YOUR CODE ABOVE HERE //
 }
 
@@ -50,7 +65,11 @@ function printObjectKeys(object) {
  */
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
-
+  let valuesArray = [];
+for (var key in object){
+  valuesArray.push(object[key]);
+}
+return valuesArray;
   // YOUR CODE ABOVE HERE //
 }
 
@@ -60,17 +79,20 @@ function getObjectValues(object) {
  */
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
-
+for (var key in object){
+  if (object.hasOwnProperty(key))
+  console.log(object[key]);
+}
   // YOUR CODE ABOVE HERE //
 }
 
 /**
  * Given an input Object, return the number of key/value pairs stored within that Object.
  */
-function getObjectLength(object) {
+function getObjectLength(obj) {
   // YOUR CODE BELOW HERE //
-
-  // YOUR CODE ABOVE HERE //
+return Object.keys(obj).length;
+;  // YOUR CODE ABOVE HERE //
 }
 
 /**
@@ -79,6 +101,10 @@ function getObjectLength(object) {
  */
 function printObjectValuesInReverse(object) {
   // YOUR CODE BELOW HERE //
+  const reversedValues = objectValues.reverse();
+ for (const values of reversedValues){
+  console.log(values);
+ }
   
   // YOUR CODE ABOVE HERE //
 }

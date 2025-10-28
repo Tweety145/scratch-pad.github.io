@@ -28,18 +28,34 @@ function length(string) {
   /**
    * Given an input String, return a new String forced to lowercase.
    */
+
+  /*
+  I:Function takes in a string
+  O:Function return a new string
+  C:
+  E:
+  */
   function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-  
+    //return a new string
+  return string.toLowerCase();
     // YOUR CODE ABOVE HERE //
   }
   
   /**
    * Given an input String, return a new String forced to uppercase.
    */
+  /*
+  I:Function takes a string
+  O:Function return a new String
+  C:
+  E:
+  */
   function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-  
+  //return new string
+
+  return  string.toUpperCase();
     // YOUR CODE ABOVE HERE //
   }
   
@@ -56,9 +72,17 @@ function length(string) {
    *
    *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
    */
+  /*
+  I:Function takes a string
+  O:Function return a string
+  C:
+  E:
+  */
   function toDashCase(string) {
+
     // YOUR CODE BELOW HERE //
-  
+  //return a string
+  return " ".join("-");
     // YOUR CODE ABOVE HERE //
   }
   
@@ -73,9 +97,16 @@ function length(string) {
    *
    * TIP: How can you use Array access to your advantage here? How can you
    *      ensure uppercase and lowercase can be compared equally?
-   */
+   */ 
+  /*
+  I:
+  O:
+  C:
+  E:
+  */
   function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
+
   
     // YOUR CODE ABOVE HERE //
   }
@@ -105,7 +136,8 @@ function length(string) {
    */
   function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-  
+    //return parameters
+  return stringOne + stringTwo;
     // YOUR CODE ABOVE HERE //
   }
   
@@ -121,7 +153,7 @@ function length(string) {
    */
   function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    var args = Array.from(arguments);
+    result = stringOne.join(stringTwo);
   
     // YOUR CODE ABOVE HERE //
   }
