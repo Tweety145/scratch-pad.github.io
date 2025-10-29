@@ -21,7 +21,7 @@ E:
 
 function length(string) {
     // YOUR CODE BELOW HERE //
-  
+  return string.length;
     // YOUR CODE ABOVE HERE //
   }
   
@@ -82,7 +82,7 @@ function length(string) {
 
     // YOUR CODE BELOW HERE //
   //return a string
-  return " ".join("-");
+  return string.toLowerCase().split(' ').join('-');
     // YOUR CODE ABOVE HERE //
   }
   
@@ -106,7 +106,7 @@ function length(string) {
   */
   function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
+if ()
   
     // YOUR CODE ABOVE HERE //
   }

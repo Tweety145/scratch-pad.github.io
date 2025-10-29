@@ -17,10 +17,12 @@ E:
 */
 function length(string) {
   // YOUR CODE BELOW HERE //
-  //return length of input string
-  return string.length;
+
+  
+return string.length;
 
   // YOUR CODE ABOVE HERE /
+}
   /*
   I: Function give an string
   O: Function return a string with uppercase
@@ -30,7 +32,7 @@ function length(string) {
   function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
     //return a new uppercase string
-    return;
+    
     // YOUR CODE ABOVE HERE //
   }
 
