@@ -106,8 +106,7 @@ function length(string) {
   */
   function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-if ()
-  
+ return string.toLowerCase().startsWith(char.toLowerCase()); 
     // YOUR CODE ABOVE HERE //
   }
   
@@ -137,7 +136,7 @@ if ()
   function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     //return parameters
-  return stringOne + stringTwo;
+  return stringOne.concat(stringTwo);
     // YOUR CODE ABOVE HERE //
   }
   
@@ -153,8 +152,8 @@ if ()
    */
   function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    result = stringOne.join(stringTwo);
-  
+    return stringOne + stringTwo;
+
     // YOUR CODE ABOVE HERE //
   }
   
@@ -193,7 +192,7 @@ if ()
    *
    * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
    */
-  function sortDescending(stringOne, stringTwo) {
+  function sortDescending(stringOne, ringTwo) {
     // YOUR CODE BELOW HERE //
     
     // YOUR CODE ABOVE HERE //
