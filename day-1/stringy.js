@@ -1,6 +1,9 @@
 // #!/usr/bin/env node
 
 'use strict'
+
+const { result } = require("lodash");
+
 /**
  * IN CLASS EXERCISE: stringy.js
  */
@@ -124,6 +127,11 @@ function length(string) {
    */
   function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
+   if (string[string.length - 1].toLowerCase() === char.toLowerCase()){
+    return true;
+   }  else {
+    return false;
+   }  
   
     // YOUR CODE ABOVE HERE //
   }
@@ -152,10 +160,10 @@ function length(string) {
    */
   function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    return stringOne + stringTwo;
-
+   
     // YOUR CODE ABOVE HERE //
   }
+  
   
   /**
    * Given two Strings, return the longest of the two.
@@ -168,7 +176,7 @@ function length(string) {
    */
   function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-  
+  return stringOne.length > stringTwo.length ? stringOne : stringTwo;
     // YOUR CODE ABOVE HERE //
   }
   
