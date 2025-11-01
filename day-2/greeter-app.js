@@ -35,7 +35,9 @@
 
 function greeter(hour) {
   // YOUR CODE BELOW HERE //
-  
+  if (hour <= 11){
+    return 'Good Morning!';
+  }
   // YOUR CODE ABOVE HERE //
 }
 

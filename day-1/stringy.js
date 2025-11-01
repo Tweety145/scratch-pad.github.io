@@ -160,6 +160,8 @@ function length(string) {
    */
   function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+  var jack = [stringOne, stringTwo];
+   return jack.join();
    
     // YOUR CODE ABOVE HERE //
   }
@@ -189,7 +191,13 @@ function length(string) {
    */
   function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-  
+  if (stringOne < stringTwo){
+    return 1;
+  } else if (stringOne > stringTwo){
+    return -1;
+  } else if (stringOne = stringTwo){
+    return 0;
+  }
     // YOUR CODE ABOVE HERE //
   }
   
@@ -202,7 +210,13 @@ function length(string) {
    */
   function sortDescending(stringOne, ringTwo) {
     // YOUR CODE BELOW HERE //
-    
+    if (stringOne > ringTwo){
+      return 1;
+    } else if (stringOne < ringTwo){
+      return -1;
+    } else if (stringOne = ringTwo){
+      return 0;
+    }
     // YOUR CODE ABOVE HERE //
   }
   
