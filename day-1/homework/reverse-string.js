@@ -21,9 +21,7 @@
 
 function reverseString(input) {
   // YOUR CODE BELOW HERE //
-for (let i = input.length - 1; i >= 0; i--){
-  console.log(input[i]);
-}
+return input.split("").reverse().join("");
   // YOUR CODE ABOVE HERE //
 }
 

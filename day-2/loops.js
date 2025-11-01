@@ -2,6 +2,8 @@
 
 'use strict';
 
+const { values } = require("lodash");
+
 /**
  * IN CLASS EXERCISE: LOOPS
  */
@@ -101,10 +103,10 @@ return Object.keys(obj).length;
  */
 function printObjectValuesInReverse(object) {
   // YOUR CODE BELOW HERE //
-  const reversedValues = objectValues.reverse();
- for (const values of reversedValues){
-  console.log(values);
- }
+  const values = Object.values(object).reverse();
+  for (const value of values){
+    console.log(value);
+  }
   
   // YOUR CODE ABOVE HERE //
 }

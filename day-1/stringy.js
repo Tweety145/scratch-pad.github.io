@@ -160,8 +160,8 @@ function length(string) {
    */
   function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-  var jack = [stringOne, stringTwo];
-   return jack.join();
+  
+   return jack.join(stringOne + stringTwo);
    
     // YOUR CODE ABOVE HERE //
   }
