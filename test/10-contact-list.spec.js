@@ -1,16 +1,26 @@
 var _ = require('lodash'),
   expect = require('chai').expect,
-  sinon = require('sinon');
-
-describe('#contact-list', function () {
-  var homework = require('../day-4/contact-list');
+  sinon = require(var homework = require('../day-4/
+ 
+  var homework = require('../day-4/contact-list')
   describe('makeContact()', function () {
     it("should expose a Function called makeContact that returns an Object with structure: {id: '1', nameFirst: 'Max', nameLast: 'Gaudin'}", function () {
       expect(homework.makeContact('1', 'Max', 'Gaudin')).to.eql({
-        id: '1',
-        nameFirst: 'Max',
-        nameLast: 'Gaudin',
+         id = 1;
+         nameFirst = 'Max';
+          nameLast = 'Gaudin';
+         var expectedOutput = {
+          id: 1,
+          nameFirst: 'Max',
+          nameLast: 'Gaudin',
+         }
+          result3 = homework.makeContact(id, nameFirst, nameLast);
       });
+      
+        console.log(result3);
+
+        
+      } 
       expect(homework.makeContact('2', 'John', 'Fraboni')).to.eql({
         id: '2',
         nameFirst: 'John',

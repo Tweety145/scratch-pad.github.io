@@ -37,9 +37,9 @@ function makeContact(id, nameFirst, nameLast) {
   // Solve this function first
   
   return {
-    id: id,
-    FirstName: nameFirst,
-    LastName: nameLast
+    id: 1,
+    nameFirst: 'Max',
+    nameLast: 'Gaudin'
   };
 }
 

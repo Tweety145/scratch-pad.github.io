@@ -7,7 +7,7 @@ describe('#contact-list', function () {
         nameLast: 'Gaudin',
       });
 
-      function makeContact(id, nameFirst, nameLast){
+      function makeContact1(id, nameFirst, nameLast){
         var contacts = [];
         return    {
           id: '1',
@@ -20,6 +20,14 @@ describe('#contact-list', function () {
         nameFirst: 'John',
         nameLast: 'Fraboni',
       });
+
+      function makeContact2(id, firstName, lastName){
+      return   {
+        id: '2',
+        nameFirst: 'John',
+        nameLast: 'Fraboni',
+      };
+      }
     });
   });
 
