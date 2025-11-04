@@ -6,6 +6,15 @@ describe('#contact-list', function () {
         nameFirst: 'Max',
         nameLast: 'Gaudin',
       });
+
+      function makeContact(id, nameFirst, nameLast){
+        var contacts = [];
+        return    {
+          id: '1',
+          nameFirst: 'Max',
+          nameLast: 'Gaudin',
+        };
+      }
       expect(makeContact('2', 'John', 'Fraboni')).to.eql({
         id: '2',
         nameFirst: 'John',

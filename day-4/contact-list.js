@@ -35,6 +35,12 @@
 
 function makeContact(id, nameFirst, nameLast) {
   // Solve this function first
+  
+  return {
+    id: id,
+    FirstName: nameFirst,
+    LastName: nameLast
+  };
 }
 
 function makeContactList() {
@@ -43,12 +49,10 @@ function makeContactList() {
    */
   var contacts = [];
 
-  return {
+  
     // we implemented the length api for you //
-    length: function(){
-      return contacts.length;
-    },
-  }
+    
+ 
 }
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////

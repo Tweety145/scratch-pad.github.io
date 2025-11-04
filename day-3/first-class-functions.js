@@ -13,7 +13,9 @@
  */
 function createGreaterThanFilter(base) {
   // YOUR CODE BELOW HERE //
-  
+  return function(element) {
+    return element > base;
+  }
   // YOUR CODE ABOVE HERE //
 }
 
@@ -25,7 +27,9 @@ function createGreaterThanFilter(base) {
  */
 function createLessThanFilter(base) {
   // YOUR CODE BELOW HERE //
-  
+  return function(element){
+    return element < base;
+  }
   // YOUR CODE ABOVE HERE //
 }
 
@@ -38,7 +42,13 @@ function createLessThanFilter(base) {
  */
 function createStartsWithFilter(startsWith) {
   // YOUR CODE BELOW HERE //
-
+  const lowerCaseStartsWith = startsWith.toLowerCase();
+return (item) => {
+  if (typeof item !== 'string'){
+    return false;
+  }
+  return item.toLowerCase().startsWith(lowerCaseStartsWith);
+}
   // YOUR CODE ABOVE HERE //
 }
 
@@ -51,7 +61,14 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
   // YOUR CODE BELOW HERE //
-
+const lowerCaseEndsWith = endsWith.toLowerCase();
+return function (inputString) {
+  
+  if(typeof inputString !== 'string'){
+    return false;
+  }
+  return inputString.toLowerCase().endsWith(lowerCaseEndsWith);
+}
   // YOUR CODE ABOVE HERE //
 }
 
@@ -72,7 +89,13 @@ function createEndsWithFilter(endsWith) {
  */
 function modifyStrings(strings, modify) {
   // YOUR CODE BELOW HERE //
-
+const modifiedStrings = [];
+for (let j = 0; j < strings.length; j++){
+  const originalString = strings[j];
+const newString = modify(originalString);
+   modifiedStrings.push(newString);
+}
+return modifiedStrings;
   // YOUR CODE ABOVE HERE //
 }
 
@@ -98,7 +121,12 @@ function modifyStrings(strings, modify) {
 
 function allStringsPass(strings, test) {
   // YOUR CODE BELOW HERE //
-
+for (const str of strings) {
+  if (!test(str)) {
+    return false;
+  }
+}
+return true;
   // YOUR CODE ABOVE HERE //
 }
 

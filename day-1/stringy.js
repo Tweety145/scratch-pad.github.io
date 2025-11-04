@@ -160,10 +160,10 @@ function length(string) {
    */
   function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-  
-   return jack.join(stringOne + stringTwo);
-   
+  var args = Array.from(arguments);
+return args.join('');
     // YOUR CODE ABOVE HERE //
+
   }
   
   
