@@ -10,12 +10,10 @@
  *
  *          ex: makeContact(1, 'Max', 'Gaudin'); // => {id: 1, nameFirst: 'Max', nameLast: 'Gaudin'}
  *
- *  b. ength(): returns the number of contacts within the list. (the list is `contacts`)
- *      2. addContact(coCreate a factory Function called makeContactList that returns an Object
- *     that manages contacts. The contact-list object should have the following methods:
- *
- *      1. lntact): takes a contact object to be added to the
- *         contact-list.
+ *  b. Create a factory Function called makeContactList that returns an object
+ * that manages contacts. The contact-list object should have the following methods:
+ *      1. length(): returns the number of contacts with the list. (the list is 'contacts')
+ *      2. addContact(contact): takes a contact object to be added to the contact-list.
  *      3. findContact(fullName): takes a full-name String, like 'Max Gaudin', and
  *         returns the contact object if found in the contacts-list, or,
  *         undefined if the fullName does not match any contacts in the list.
