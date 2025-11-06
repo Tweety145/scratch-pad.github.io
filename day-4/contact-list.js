@@ -39,7 +39,7 @@ function makeContact(id, nameFirst, nameLast) {
 
 
 
-function makeContactList() {
+function makeContactList(id, nameFirst, nameLast) {
   /*
    * You need something here to hold contacts. See length api for a hint:
    */
@@ -49,9 +49,17 @@ function makeContactList() {
     length : function(){
       return contacts.length;
     },
-  }
-  // we implemented the length api for you //
+    addContact: function(contact){
+return contacts.push(contact);
+    }, 
+    function findContact(fullName){
+    return contacts.find(contact => contact.fullName() === fullName);
+   }
+  
     
+   
+    
+  };
  
 }
 
