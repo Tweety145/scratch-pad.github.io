@@ -52,8 +52,13 @@ function makeContactList(id, nameFirst, nameLast) {
     addContact: function(contact){
 return contacts.push(contact);
     }, 
-    function findContact(fullName){
-    return contacts.find(contact => contact.fullName() === fullName);
+    findContact function(fullName){
+    for(let i =0; i < contacts.length; i++){
+      var name = contacts[i].nameFirst + " " + contacts[i].nameLast;
+      if(name === fullName){
+        return contacts[i];git
+      }
+    }
    }
   
     
