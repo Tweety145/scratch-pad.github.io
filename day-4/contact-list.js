@@ -69,9 +69,18 @@ for(let i = 0; i < contacts.length; i++){
 }
    },
 
-printAllContactNames: function(fullName){
+printAllContactNames: function(){
   
+  // create empty aray
+  var output1 = [];
+  // loop through contacts
+  for (let i = 0; i < contacts.length; i++){
 
+  
+    // create the contact's full name
+    var fullName = contacts[i].firstName
+    // add contact's full name to array
+  }
    console.log(contacts); 
 }
     
