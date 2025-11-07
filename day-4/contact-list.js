@@ -19,9 +19,10 @@
  *         undefined if the fullName does not match any contacts in the list.
  *      4. removeContact(contact): takes a contact object to be removed from
  *         the contact-list.
- *      5. add a printAllContactNames() Function to your makeContactList() factory. The printAllContactNames() Function should
+ *    add a printAllContactNames() Function to your makeContactList() factory. The printAllContactNames() Function should
  *         return a String formated with all the full-names of the separated
- *         with a line-break, like so:
+ *         with a line-break, like so:   
+ * 
  *
  *         myContacts.printAllContactNames(); // => Max Gaudin
  *                                                  John Fraboni
@@ -52,15 +53,23 @@ function makeContactList(id, nameFirst, nameLast) {
     addContact: function(contact){
 return contacts.push(contact);
     }, 
-    findContact function(fullName){
+    findContact: function(fullName){
     for(let i =0; i < contacts.length; i++){
       var name = contacts[i].nameFirst + " " + contacts[i].nameLast;
       if(name === fullName){
-        return contacts[i];git
+        return contacts[i];
       }
     }
-   }
-  
+   },
+   removeContact: function(contact){
+for(let i = 0; i < contacts.length; i++){
+  if(contacts[i] === contact){
+    return contacts.splice(i, 1);
+  }
+}
+   },
+
+}
     
    
     
