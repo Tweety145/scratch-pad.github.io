@@ -69,9 +69,11 @@ for(let i = 0; i < contacts.length; i++){
 }
    },
 
+printAllContactNames: function(fullName){
+  
+
+   console.log(contacts); 
 }
-    
-   
     
   };
  
